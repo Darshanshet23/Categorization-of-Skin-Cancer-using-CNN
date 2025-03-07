@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>Skin Cancer Detection</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="nav-link">Home</a></li>
+                <li><a href="{{ url_for('logout') }}" class="nav-link">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="main">
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <img src="{{ url_for('uploaded_file', filename=image_path) }}" alt="Uploaded Image">
+        <h2>The predicted class is: {{ prediction }}</h2>
+        <a href="{{ url_for('upload') }}" class="btn">Upload Another Image</a>
+    </div>
+</section>
+</body>
+</html>

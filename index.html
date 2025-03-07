@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skin Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>Skin Cancer Detection</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="nav-link">Home</a></li>
+                <li><a href="{{ url_for('signup') }}" class="nav-link">Sign Up</a></li>
+                <li><a href="{{ url_for('login') }}" class="nav-link">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="showcase">
+    <div class="container">
+        <div class="text-content">
+            <h1>AI Skin Analysis</h1>
+            <p>Our project utilizes Convolutional Neural Networks (CNNs), a powerful type of deep learning model known for its effectiveness in image classification tasks. By training on a diverse dataset of skin images, the CNN model can accurately classify skin lesions as either benign or malignant. This approach significantly improves the accuracy of skin cancer detection and supports early intervention.</p>
+            <a href="{{ url_for('upload') }}" class="btn">Try the AI Model</a>
+        </div>
+        <div class="image-content">
+            <img src="{{ url_for('static', filename='doctor.png') }}" alt="Skin Analysis">
+        </div>
+    </div>
+</section>
+<section id="steps">
+    <div class="container">
+        <h1>Three Steps to Determine Skin Cancer Type with AI</h1>
+        <div class="steps-wrapper">
+            <div class="step">
+                <div class="circle">1</div>
+                <p>Sign Up for trying our AI model</p>
+            </div>
+            <div class="step">
+                <div class="circle">2</div>
+                <p>Upload an image for detection</p>
+            </div>
+            <div class="step">
+                <div class="circle">3</div>
+                <p>Get prediction</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

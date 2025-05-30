@@ -46,10 +46,16 @@ A Flask-based web app allows users to upload images and receive predictions from
 ```
 git clone https://github.com/Darshanshet23/Categorization-of-Skin-Cancer-using-CNN.git
 cd Categorization-of-Skin-Cancer-using-CNN
-
+```
+2. ** Install dependencies:**
+```
 pip install -r requirements.txt
-
+```
+3. ** Run the app:**
+```
 python app.py
-Visit in browser:
+```
+4. **Visit in browser:**
+```
 http://localhost:5000
 ```
